@@ -1,0 +1,185 @@
+@import "compass";
+@import "animate";
+
+body {
+  @include box-sizing(border-box);
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #f9c346;
+  font-family: "ff-cocon-web-pro";
+}
+
+#header-line {
+  position: absolute;
+
+  z-index: -1;
+  top: 0px;
+  left: 50%;
+
+  height: 360px;
+  width: 16px;
+  margin-left: -8px;
+
+  background-color: #000;
+}
+
+header {
+  @include border-radius(10px);
+
+  margin: auto;
+  margin-top: 25px;
+
+  width: 480px;
+
+  border: 5px solid #000;
+  background-color: #973e56;
+
+  color: #f9c346;
+  font-size: 96px;
+  text-align: center;
+
+  padding: 10px;
+
+  p {
+    line-height: 84px;
+    margin: 0;
+  }
+}
+
+nav {
+  margin: auto;
+  margin-top: 25px;
+
+  width: 960px;
+
+  ul.text {
+    @include horizontal-list;
+    overflow: visible;
+
+    margin: 0;
+    padding: 0;
+
+    li {
+      @include border-radius(10px);
+
+      cursor: pointer;
+
+      border: 5px solid #000;
+      background-color: #973e56;
+
+      margin-left: 60px;
+      height: 50px;
+      width: 150px;
+
+      text-align: center;
+
+      &:hover {
+        -webkit-animation-name: swing;
+        -moz-animation-name: swing;
+        -ms-animation-name: swing;
+        -o-animation-name: swing;
+        animation-name: swing;
+
+        background-color: #f9c346;
+
+        a {
+          color: #973e56;
+        }
+      }
+
+      a {
+        color: #f9c346;
+        font-size: 32px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul.lines {
+    @include horizontal-list;
+
+    clear: left;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 68px;
+      height: 25px;
+      width: 150px;
+
+      text-align: center;
+
+      .line {
+        background-color: #000;
+        margin-left: 70px;
+        width: 10px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+#content {
+  @include border-radius(10px);
+
+  margin: auto;
+  width: 960px;
+
+  border: 5px solid #000;
+  background-color: #fff;
+
+  min-height: 200px;
+}
+
+#footer-lines {
+  position: relative;
+
+  margin: auto;
+
+  height: 50px;
+  width: 960px;
+
+  #footer-line-left {
+    position: absolute;
+
+    left: 200px;
+
+    height: 50px;
+    width: 15px;
+
+    background-color: #000;
+  }
+
+  #footer-line-right {
+    position: absolute;
+
+    right: 200px;
+
+    height: 50px;
+    width: 15px;
+
+    background-color: #000;
+  }
+}
+
+footer {
+  @include border-radius(10px);
+
+  margin: auto;
+  width: 960px;
+
+  border: 5px solid #000;
+  color: #f9c346;
+
+  height: 45px;
+  background-color: #973e56;
+
+  text-align: center;
+  font-size: 16px;
+
+  p {
+    margin: 0;
+  }
+}
