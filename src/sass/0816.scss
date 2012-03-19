@@ -177,6 +177,8 @@ footer {
   margin: auto;
   width: 760px;
 
+  padding-top: 5px;
+
   border: 5px solid #000;
   color: #f9c346;
 
@@ -191,6 +193,8 @@ footer {
   }
 
   p {
-    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px
   }
 }
