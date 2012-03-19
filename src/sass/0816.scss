@@ -1,5 +1,6 @@
 @import "compass";
-@import "animate";
+@import "compass/reset";
+@import "base";
 
 body {
   @include box-sizing(border-box);
@@ -9,6 +10,34 @@ body {
 
   background-color: #f9c346;
   font-family: "ff-cocon-web-pro";
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 #header-line {
@@ -43,6 +72,7 @@ header {
   padding: 10px;
 
   p {
+    font-size: 96px;
     line-height: 84px;
     margin: 0;
   }
@@ -70,7 +100,7 @@ nav {
       background-color: #973e56;
 
       margin-left: 60px;
-      height: 50px;
+      height: 45px;
       width: 150px;
 
       text-align: center;
@@ -127,6 +157,8 @@ nav {
   margin: auto;
   width: 960px;
 
+  padding: 25px;
+
   border: 5px solid #000;
   background-color: #fff;
 
@@ -166,9 +198,10 @@ nav {
 
 footer {
   @include border-radius(10px);
+  @include transition-duration(0.5s);
 
   margin: auto;
-  width: 960px;
+  width: 760px;
 
   border: 5px solid #000;
   color: #f9c346;
@@ -178,6 +211,10 @@ footer {
 
   text-align: center;
   font-size: 16px;
+
+  &:hover {
+    @include scale(1.2);
+  }
 
   p {
     margin: 0;

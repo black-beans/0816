@@ -9,7 +9,6 @@
   <meta content='08/16, Bar, Rauchen, Musik, Snacks, Bremgarten' name='keywords' />
   <link href='/0816/stylesheets/0816.css' rel='stylesheet' type='text/css' />
   <link href='/0816/stylesheets/animate.css' rel='stylesheet' type='text/css' />
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js'></script>
   <script src='http://use.typekit.com/slj6juy.js'></script>
   <script>
     try{Typekit.load();}catch(e){}
@@ -52,14 +51,58 @@
         </li>
       </ul>
     </nav>
-    <div id='content'></div>
+    <div id='content'>
+      <article>
+        <h1>This is heading 1 within an article</h1>
+        <p>
+          This is a paragraph in the article. Next comes a abbreviation:
+          <abbr title='World Health Organization'>WHO.</abbr>
+        </p>
+        <section>
+          <h2>Heading 2 within a section</h2>
+          <p>
+            This is a paragraph in the section. It contains a
+            <a href='#'>link to an anchor.</a>
+          </p>
+          <h3>Heading 3</h3>
+          <p>Next you see an address</p>
+          <address>
+            Example.com
+            <br />
+            Box 564, Disneyland
+            <br />
+            USA
+          </address>
+          <p>And an aside content</p>
+          <aside>
+            <h4>Epcot Center</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+          </aside>
+        </section>
+        <section>
+          <h5>This is heading 5</h5>
+          <p>
+            Text can be
+            <b>bold</b>
+          </p>
+        </section>
+      </article>
+      <h6>This is heading 6</h6>
+      <p>We can cite from another source</p>
+      <blockquote cite='http://www.worldwildlife.org/who/index.html'>
+        For 50 years, WWF has been protecting the future of nature. The world’s leading conservation organization,
+        WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.
+      </blockquote>
+    </div>
     <div id='footer-lines'>
       <div id='footer-line-left'></div>
       <div id='footer-line-right'></div>
     </div>
-    <footer>
+    <footer class='animated'>
       <p>6 Tage geöffnet &#10038; Jeden Freitag mit DJ &#10038; Jeden 1. Freitag im Monat mit Livemusik</p>
       <p>Sternengasse 1 &#10038; 5620 Bremgarten &#9990; 056 534 12 63</p>
     </footer>
   </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js'></script>
 </body>

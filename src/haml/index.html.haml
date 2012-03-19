@@ -12,7 +12,6 @@
   %link{ rel: 'stylesheet', type: 'text/css', href: '/0816/stylesheets/0816.css' }
   %link{ rel: 'stylesheet', type: 'text/css', href: '/0816/stylesheets/animate.css' }
 
-  %script{ src: 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js' }
   %script{ src: 'http://use.typekit.com/slj6juy.js' }
   %script
     try{Typekit.load();}catch(e){}
@@ -45,13 +44,49 @@
           .line
         %li
           .line
-
     #content
+      %article
+        %h1 This is heading 1 within an article
+        %p
+          This is a paragraph in the article. Next comes a abbreviation:
+          %abbr{ title: 'World Health Organization' } WHO.
+
+        %section
+          %h2 Heading 2 within a section
+          %p
+            This is a paragraph in the section. It contains a
+            %a{ href: '#' } link to an anchor.
+          %h3 Heading 3
+          %p Next you see an address
+          %address
+            Example.com
+            %br
+            Box 564, Disneyland
+            %br
+            USA
+          %p And an aside content
+          %aside
+            %h4 Epcot Center
+            %p The Epcot Center is a theme park in Disney World, Florida.
+        %section
+          %h5 This is heading 5
+          %p
+            Text can be
+            %b bold
+      %h6 This is heading 6
+      %p We can cite from another source
+      %blockquote{ cite: 'http://www.worldwildlife.org/who/index.html' }
+        For 50 years, WWF has been protecting the future of nature. The world’s leading conservation organization,
+        WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.
+
 
     #footer-lines
       #footer-line-left
       #footer-line-right
 
-    %footer
+    %footer.animated
       %p 6 Tage geöffnet &#10038; Jeden Freitag mit DJ &#10038; Jeden 1. Freitag im Monat mit Livemusik
       %p Sternengasse 1 &#10038; 5620 Bremgarten &#9990; 056 534 12 63
+
+  %script{ src: 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js' }
